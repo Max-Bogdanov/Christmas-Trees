@@ -1,0 +1,161 @@
+.model {
+    position: relative;
+    background-color: var(--main-color);
+    max-width: 950px;
+    border: 1px solid var(--second-color);
+    border-radius: 14px;
+    padding: 60px 85px;
+    width: 100%;
+}
+
+.model__close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    color: var(--main-bg-color);
+}
+
+.model__close:hover {
+    color: var(--second-color);
+}
+
+.model__close:focus {
+    color: var(--second-color);
+    outline: 1px solid  var(--second-color);
+}
+
+.model__close:active {
+    color: var(--second-bg-color);
+}
+
+.madel__titel {
+    color: var(--main-bg-color);
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 50px;
+}
+
+.model__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.model__label {
+    display: block;
+    position: relative;
+}
+
+.model__label-text {   
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: var(--second-color);
+    font-weight: 700;
+    font-style: 18px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+}
+
+.model__input {
+    width: 100%;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    padding: 45px 15px 31px;
+    border: 1px solid var(--second-bg-color);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.MODEL__LABEL__LAST {
+    margin-bottom: 60px;
+}
+
+.pearent {
+    align-self: flex-end;
+}
+
+.model__button {
+    padding: 14px 36px;
+    background: var(--triger-color);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    color: var(--main-color);
+    border: 0;
+}
+
+.model__button:hover {
+    background-color: var(--main-bg-color);
+}
+
+.model__button:active {
+    background-color: var(--main-bg-color);
+}
+
+@media (max-width: 1200px) {
+    .model {
+        padding: 50px 100px;
+        max-width: 746px;
+    }
+
+    .madel__titel {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+    .MODEL__LABEL__LAST {
+        margin-bottom: 40px;
+    }
+
+    .model__button {
+        padding: 12px 30px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width:1000px) {
+    .model {
+        padding: 40px 80px;
+        max-width: 600px;
+    }
+
+}
+
+@media (max-width: 760px) {
+    .model {
+        padding: 30px 15px;
+    }
+    
+    .madel__titel {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .model__label-text {
+        font-size: 12px;
+    }
+
+    .MODEL__LABEL__LAST {
+        margin-bottom: 15x;
+    }
+
+    .model__input {
+        font-size: 12px;
+        padding: 38px 10px 16px;
+    }
+
+    .model__button {
+        padding: 5px 14px;
+        border-radius: 6px;
+    }
+}
